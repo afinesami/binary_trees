@@ -6,14 +6,14 @@
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-  binary_tree_t *nodo;
+binary_tree_t *nodo;
 
 nodo = malloc(sizeof(binary_tree_t));
-  if (nodo == NULL)
-  return (NULL);
-  nodo->n = value;
-  nodo->parent = parent;
-  nodo->left = NULL;
-  nodo->right = NULL;
-  return (nodo);
+if (nodo == NULL)
+return (NULL);
+nodo->n = value;
+nodo->parent = parent;
+nodo->left = NULL;
+nodo->right = NULL;
+return (nodo);
 }
